@@ -1,0 +1,12 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Estilos pro corpo da página body */
+
+body {
+    font-family: 'Calibri', sans-serif;
+    background-color: red;
+}

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1{
+    color: black;
+    font-size: 30px;
+    font-family: "Lucida Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sobre{
+    color: black;
+    font-size: 26;
+    font-family: 'Times New Roman',sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.textosobre{
+    color: black;
+    font-size: 16;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.textocontato{
+    color: black;
+    font-size: 16;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+header{
+    background-color: #b4a860;
+    color: black;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a{
+    color: black;
+}
+
+nav :hover{
+    color: red;
+}
+
+.titulolista{
+    color: blueviolet;
+    font-size: 22px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding: 0 10px;
+
+}
+
+.textolista{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: left;
+    margin-bottom: 8px;
+    padding: 0 30px;
+}
+
+.tituloordenada, .titulonoordenada{
+    color: blueviolet;
+    font-size: 18px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.listaordenada, .listaNoOrdenada{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding: 0 80px;
+}
+
+.logocss{
+    display: block;
+    margin: 0;
+    width: 200px;
+    height: auto;
+    padding: 0 20px;
+}
+
+.logojs{
+    display: block;
+    margin: 0;
+    width: 200px;
+    height: auto;
+    padding: 0 20px;
+}
+
+footer{
+    background-color: #b4a860;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
