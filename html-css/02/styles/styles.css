@@ -3,12 +3,12 @@
     padding: 0;
 }
 
-.body{
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
-}
+  }
 
 h1{
     color: black;
@@ -101,7 +101,7 @@ nav :hover{
     padding: 0 80px;
 }
 
-.logocss{
+.logocss, .logojs{
     display: block;
     margin: 0;
     width: 200px;
@@ -109,17 +109,11 @@ nav :hover{
     padding: 0 20px;
 }
 
-.logojs{
-    display: block;
-    margin: 0;
-    width: 200px;
-    height: auto;
-    padding: 0 20px;
-}
 
 footer{
     background-color: #b4a860;
     padding: 10px;
     text-align: center;
     margin-top: auto;
-}
+    
+  }
