@@ -13,52 +13,6 @@ body {
     margin: 0;
   }
 
-h1{
-    color: black;
-    font-size: 30px;
-    font-family: "Lucida Sans", sans-serif;
-    text-align: center;
-    margin-bottom: 16px;
-}
-
-.sobre{
-    color: black;
-    padding: 0 20px;
-    font-size: 26;
-    font-family: 'Times New Roman',sans-serif;
-    text-align: left;
-    margin-bottom: 16px;
-}
-
-.textosobre{
-    color: black;
-    font-size: 16;
-    font-family: 'Lucida Sans', sans-serif;
-    text-align: justify;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    padding: 0 20px;
-}
-
-.contato{
-    color: black;
-    padding: 0 20px;
-    font-size: 26;
-    font-family: 'Times New Roman',sans-serif;
-    text-align: left;
-    margin-bottom: 16px;
-}
-
-.textocontato{
-    color: black;
-    font-size: 16;
-    font-family: 'Lucida Sans', sans-serif;
-    text-align: justify;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    padding: 0 20px;
-}
-
 header{
     background-color: #b4a860;
     color: black;
@@ -71,8 +25,23 @@ nav a{
     text-decoration: none;
 }
 
+
 nav :hover{
     color: red;
+}
+
+.logoSite{
+    width: 100px;
+    padding: 0 20px;
+    display: flex;
+}
+
+h1{
+    color: black;
+    font-size: 30px;
+    font-family: "Lucida Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .titulolista{
@@ -83,7 +52,6 @@ nav :hover{
     line-height: 1.5;
     margin-bottom: 16px;
     padding: 0 10px;
-
 }
 
 .textolista{
@@ -115,7 +83,51 @@ nav :hover{
     padding: 0 80px;
 }
 
-.logocss, .logojs{
+.sobre{
+    color: black;
+    padding: 0 45px;
+    font-size: 26;
+    font-family: 'Times New Roman',sans-serif;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.sobreContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logocss{
+    display: block;
+    margin: 0;
+    width: 200px;
+    height: auto;
+    padding: 0 20px;
+    order: 1;
+}
+
+.textoSobre{
+    color: black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    order: 2;
+}
+
+.contato{
+    color: black;
+    padding: 0 20px;
+    font-size: 26;
+    font-family: 'Times New Roman',sans-serif;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+
+.logojs{
     display: block;
     margin: 0;
     width: 200px;
@@ -129,4 +141,4 @@ footer{
     padding: 10px;
     text-align: center;
     margin-top: auto;
-  }
+}
