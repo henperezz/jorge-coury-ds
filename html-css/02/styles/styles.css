@@ -13,11 +13,21 @@ body {
     margin: 0;
   }
 
-header{
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #b4a860;
     color: black;
     padding: 10px;
-    text-align: right;
+}
+
+.headerText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: auto;
 }
 
 nav a{
@@ -33,7 +43,6 @@ nav :hover{
 .logoSite{
     width: 100px;
     padding: 0 20px;
-    display: flex;
 }
 
 h1{
