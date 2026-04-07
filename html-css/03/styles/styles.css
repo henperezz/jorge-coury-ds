@@ -21,7 +21,7 @@ body {
   background-color: var(--cor-terciaria);
   color: var(--cor-secundaria);
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 header {
@@ -93,7 +93,7 @@ header {
   margin: 40px 203px 32px 476px;
 }
 
-.button {
+.buttonGithub {
   display: flex;
   text-decoration: none;
   font-family: var(--fonte-secundaria);
@@ -106,7 +106,28 @@ header {
   margin: 32px 189.5px 32px 462.5px;
 }
 
-.iconMedia {
+.iconGithub {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding-left: 119.5px;
+  padding-right: 16px;
+}
+
+.buttonLinkedin {
+  display: flex;
+  text-decoration: none;
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  border: 2px solid var(--cor-primaria);
+  border-radius: 8px;
+  padding: 16px 102.5px 16px 16px;
+  margin: 10px 189.5px 32px 462.5px;
+}
+
+.iconLinkedin {
   display: flex;
   width: 32px;
   height: 32px;
@@ -126,7 +147,7 @@ footer {
   color: var(--cor-terciaria);
   background-color: var(--cor-primaria);
   height: 80px;
-  width: auto;
+  width: 1920px;
   margin-top: auto;
 }
 
