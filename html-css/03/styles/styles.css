@@ -73,6 +73,12 @@ header {
   color: var(--cor-primaria);
 }
 
+.textHome {
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  margin: 40px 82px 40px 355px;
+}
+
 .socialMedias {
   display: flex;
   flex-direction: column;
@@ -88,6 +94,7 @@ header {
 }
 
 .button {
+  display: flex;
   text-decoration: none;
   font-family: var(--fonte-secundaria);
   font-size: 24px;
@@ -99,9 +106,10 @@ header {
   margin: 32px 189.5px 32px 462.5px;
 }
 
-.github {
-  height: 32px;
+.iconMedia {
+  display: flex;
   width: 32px;
+  height: 32px;
   padding-left: 119.5px;
   padding-right: 16px;
 }
