@@ -3,63 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Alura</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
-
   <body>
-    <div class="headerContainer">
-      <header class="headerHome">
+    <header>
+      <div class="headerText">
         <nav>
-          <ul class="menuHome">
-            <li><a href="index.html" class="menuLink">Home</a></li>
-            <li><a href="sobre.html" class="menuLink">Sobre mim</a></li>
+          <ul class="headerLinks">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">Sobre Mim</a></li>
           </ul>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
 
-    <main>
-      <div class>
-        <div class="textHome">
+    <section class="content">
+      <div class="contentLeft">
+        <div class="infoHome">
           <h1 class="titleHome">
-            Eleve seu negócio digital <br />
-            a outro nível
-            <span class="titleEmphasis"
-              >com um <br />
-              Front-end de qualidade!</span
-            >
+            Eleve seu negócio digital <br />a outro nível
+            <span class="emphasisText">
+              com um <br />
+              Front-end de qualidade! <br />
+            </span>
           </h1>
-          <p class="infoHome">
-            Olá! Sou Joana Santos, desenvolvedora Front-end <br />
-            com especialidade em React, HTML e CSS. Ajudo <br />
-            pequenos negócios e designers a colocarem em <br />
-            práticas boas ideias. Vamos conversar?
-          </p>
         </div>
         <div class="socialMedias">
-          <h2 class="titleSocial">Acesse minhas redes:</h2>
-          <a class="logos" href="">
-            <img src="assets/Logo Github.png" alt="Github" />
-            <p>GitHub</p>
-          </a>
-          <a class="logos" href="">
-            <img src="assets/Logo linkedin.png" alt="Linkedin" />
-            <p>Linkedin</p>
-          </a>
-          <a class="logos" href="">
-            <img src="assets/Logo Twitch.png" alt="Twitch" />
-            <p>Twitch</p>
-          </a>
+          <h2 class="titleMedia">Acesse minhas redes:</h2>
+          <a class="button" href=""
+            ><img class="github" src="assets/Logo Github.png" alt="" />Github</a
+          >
         </div>
       </div>
 
-      <img class="image" src="assets/Rectangle 47.png" alt="Imagem Mulher" />
-    </main>
+      <img class="imageWoman" src="assets/Rectangle 47.png" alt="" />
+    </section>
 
     <footer>
-      <p>Desenvolvido por Alura.</p>
+      <p class="textFooter">Desenvolvido por Alura.</p>
     </footer>
   </body>
 </html>
