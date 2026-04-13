@@ -1,16 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); /*Importação da fonte*/
 
 :root {
-  --botao-azul: #167bf7;
-  --cor-primaria: #ffffff;
-  --cor-secundaria: #f9f9f9;
+  --botao-azul: #167bf7; /*Define a cor do botão*/
+  --cor-primaria: #ffffff; /*Define a cor primária do site*/
+  --cor-secundaria: #f9f9f9; /*Define a cor secundária do site*/
+  --cor-de-fundo: #000000; /*Define a cor do fundo*/
+  --botao-efeito: #3c92fa; /*Define o efeito de quando o mouse passa por cima do botão*/
+  --fonte-primaria:
+    "Inter", sans-serif; /*Define a fonte primaria utilizada no site*/
+  --font-size-principal: 16px; /*Define o tamanho da fonte principal do site*/
 }
 
 * {
+  /*Reseta as configurações de margin e padding*/
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: black;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-primaria);
+  font-family: var(--fonte-primaria);
+  font-size: var(--font-size-principal);
+}
+
+.container {
+  /*Container para colocar a imagem de fundo como background*/
+  height: 100vh; /*Define o tamanho do container para 100vh (vertical horizontal)*/
+  display: grid; /*Define o display como grid*/
+}
+
+.principal {
+  background-image: url(../assets/Background.png); /*Define que a imagem é o fundo do container*/
 }
