@@ -53,14 +53,14 @@ body {
 }
 
 .containerImg {
-  margin: 1em 12em 2em 0em;
+  margin: 1em 12em 2em 0em; /*Define as margens da imagem, alinhando de forma correta as necessidades da página*/
 }
 
 .containerBotao {
-  background-color: var(--botao-azul);
-  width: 32rem;
-  border-radius: 5px;
-  padding: 1em;
+  background-color: var(--botao-azul); /*Define a cor do fundo do botão*/
+  width: 32rem; /*Define a largura do botão, sendo equivalente a 16px x 32*/
+  border-radius: 5px; /*Define a curvatura da borda da imagem*/
+  padding: 1em; /*Define o padding, ou seja, a distância entre o conteúdo da */
   color: var(--cor-primaria);
   display: block;
   text-decoration: none;
@@ -85,7 +85,7 @@ body {
   font-weight: 400;
 }
 
-.containerBotao,
+.containerBotao:hover,
 .botaoSecundario:hover {
   background-color: var(--botao-efeito);
 }
@@ -105,5 +105,77 @@ body {
 .containerImgSecundaria {
   height: 35rem;
   width: 31rem;
-  margin: 4em 10em 0em 8em;
+  margin: 0em 10em;
+}
+
+.descricaoTitulo {
+  font-family: var(--fonte-primaria);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.descricaoTexto {
+  font-family: var(--fonte-primaria);
+  font-size: var(--font-size-principal);
+  font-weight: 400;
+  color: var(--cor-secundaria);
+  max-width: 38em;
+}
+
+.descricaoTextoSecundario {
+  font-family: var(--fonte-primaria);
+  font-size: var(--font-size-principal);
+  color: var(--cor-secundaria);
+  font-weight: 400;
+  max-width: 35em;
+  margin: 10rem 4.3rem 2rem 7rem;
+}
+
+.botaoTextoSecundario {
+  background-color: var(--botao-azul);
+  color: var(--cor-primaria);
+  text-decoration: none;
+  border-radius: 8px;
+  width: 10.1rem;
+  padding: 1em;
+  text-align: center;
+  margin-left: 7rem;
+}
+
+.containerImgTerciaria {
+  margin: 0em;
+}
+
+.containerImgQuaternaria {
+  margin: 0rem 2rem;
+}
+
+.rodape {
+  margin: auto;
+  text-align: center;
+}
+
+.rodapeLista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0em;
+}
+
+.listaLink {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  margin-left: 1em;
+}
+
+.listaLink:hover {
+  background-color: var(--botao-efeito);
+}
+
+.rodapeTexto {
+  margin: 1em 0em;
+  color: var(--cor-secundaria);
+  font-size: 14px;
 }
