@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Exemplo de input</h1>
+    <form action="">
+      <!--Criação de formulário-->
+      <label for="">Nome: </label>
+      <!--Nome do input-->
+      <input type="text" placeholder="Digite seu nome completo" />
+      <!--Cria o input, sendo o placeholder o que aparece dentro do texto para guiar-->
+
+      <label for="">Senha: </label>
+      <input type="password" placeholder="Digite sua senha" />
+      <!--Cria input para senha-->
+
+      <label for="">Email: </label>
+      <input type="email" placeholder="email@email.com" />
+
+      <label for="">Número</label>
+      <input type="number" placeholder="Número" min="1" max="500" />
+
+      <label for="">Telefone: </label>
+      <input type="tel" placeholder="(19)99999-5875" />
+
+      <label for="">URL: </label>
+      <input type="url" placeholder="" />
+
+      <label for="">Data</label>
+      <input type="date" placeholder="dd/mm/aaaa" />
+
+      <label for="">Data e hora:</label>
+      <input type="datetime-local" placeholder="dd/mm/aaaa hh/mm" />
+
+      <label for="">Hora</label>
+      <input type="time" placeholder="hh/mm" />
+
+      <label for="">Mês</label>
+      <input type="month" name="" id="" />
+
+      <label for="">Mensagens</label>
+      <textarea
+        name=""
+        id=""
+        placeholder="Digite sua mensagem aqui......"
+      ></textarea>
+
+      <label for="">Escolha uma opção</label>
+      <select name="" id="">
+        <option value="none">Selecione</option>
+        <option value="1">Abacate</option>
+        <option value="2">Amora</option>
+        <option value="3">Beterraba</option>
+      </select>
+
+      <label for="">Faixa de valores</label>
+      <input type="range" min="1" max="50" />
+
+      <label for="">Enviar arquivo</label>
+      <input type="file" name="" id="" />
+
+      <label for="">Botão de entrada</label>
+      <input type="button" value="Olá" onclick="alert('Olá Mundo')" />
+
+      <label for="">Quantidade</label>
+      <input type="number" id="quantity" min="1" max="5" />
+
+      <label for="">Cor: </label>
+      <input type="color" />
+
+      <label for="">Checkbox</label>
+      <input type="checkbox" />
+
+      <div class="buttons">
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
+</html>
