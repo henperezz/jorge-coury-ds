@@ -11,9 +11,8 @@ body {
   background-color: whitesmoke;
 }
 
-.menuLogin,
 .menuSignUp {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -25,12 +24,25 @@ body {
   width: 25%;
 }
 
-.menuSignUp {
-  /* display: none; */
+.menuSignUp.activated {
+  display: flex;
 }
 
 .menuLogin {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 0px 2px 2px #d9d1d1;
+  margin-top: 6rem;
+  margin-left: 40%;
+  background-color: white;
+  border-radius: 6px;
+  width: 25%;
+}
+
+.menuLogin.activated {
+  display: flex;
 }
 
 h1 {
@@ -81,7 +93,8 @@ input::placeholder {
   padding-left: 8px;
 }
 
-.buttonLogin {
+.buttonLogin,
+.buttonCadastro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +113,8 @@ input::placeholder {
   font-size: 14px;
 }
 
-.buttonLogin:hover {
+.buttonLogin:hover,
+.buttonCadastro:hover {
   border-color: #174daa;
   background-color: #174daa;
 }
