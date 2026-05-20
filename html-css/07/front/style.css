@@ -51,8 +51,8 @@ h2 {
 
 label {
   padding-bottom: 4px;
-  padding-top: 10px;
-  font-size: 16px;
+  padding-top: 16px;
+  font-size: 14px;
   font-weight: 600;
   font-family: Arial, sans-serif;
 }
@@ -63,6 +63,7 @@ label {
 
 label.textCheckbox {
   font-size: 11px;
+  font-family: Arial, sans-serif;
 }
 
 .checkbox {
@@ -113,6 +114,7 @@ input::placeholder {
 }
 
 .autorizationText {
-  font-size: 12px;
   margin-top: 10px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
 }
