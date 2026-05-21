@@ -9,8 +9,10 @@ body {
   justify-content: center;
   align-content: center;
   background-color: whitesmoke;
+  overflow: hidden;
 }
 
+.menuLogin,
 .menuSignUp {
   display: none;
   flex-direction: column;
@@ -24,25 +26,13 @@ body {
   width: 25%;
 }
 
+.menuLogin.activated,
 .menuSignUp.activated {
   display: flex;
 }
 
 .menuLogin {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 0px 2px 2px #d9d1d1;
-  margin-top: 6rem;
-  margin-left: 40%;
-  background-color: white;
-  border-radius: 6px;
-  width: 25%;
-}
-
-.menuLogin.activated {
-  display: flex;
+  margin-bottom: 400px;
 }
 
 h1 {
@@ -91,6 +81,7 @@ label.textCheckbox {
 
 input::placeholder {
   padding-left: 8px;
+  font-family: Arial, sans-serif;
 }
 
 .buttonLogin,
@@ -120,7 +111,7 @@ input::placeholder {
 }
 
 .signUpText,
-.signUpLink {
+#signUpLink {
   font-family: Arial, sans-serif;
   font-size: 14px;
   padding-top: 0.7rem;
