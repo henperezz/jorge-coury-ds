@@ -2,7 +2,8 @@
   --laranja: #ff5a1f;
   --preto: #080808;
   --claro: #f5f1e8;
-  --primary-font: Arial sans-serif;
+  --cinza: #d1cec7;
+  --primary-font: Arial, sans-serif;
   /* titulo: 77.3px
       sub-titulo: 20px
       explorar: 13px
@@ -21,20 +22,23 @@
   padding: 0;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: none;
 }
 
 .headerContent {
-  padding-top: 2rem;
   display: flex;
   flex-direction: row;
 }
 
 .logoTitulo {
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
+  display: inline-flex;
+  margin: 2rem 0px 2rem 90px;
+  align-items: center;
 }
 
 .logo {
@@ -50,18 +54,152 @@ header {
   color: var(--claro);
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 40px 90px 40px auto;
+}
+
 .linksLista {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  margin-left: auto;
+  gap: 42px;
   list-style: none;
+}
+
+.textoLinks {
+  color: var(--claro);
+  text-decoration: none;
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+hr {
+  color: var(--claro);
 }
 
 .inicio {
   background-image: url(assets/img/hero-basquete-feminino.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 1586px;
+  height: 1920px;
   width: auto;
+}
+
+.inicioContent {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+  margin-top: 140px;
+}
+
+.upperTitulo {
+  font-size: 12px;
+  font-weight: 800;
+  font-family: var(--primary-font);
+  color: var(--laranja);
+}
+
+.inicioTitulo {
+  color: var(--claro);
+  font-size: 116px;
+  font-family: var(--primary-font);
+  font-weight: 700px;
+  width: 680px;
+}
+
+.spanTitulo {
+  color: var(--laranja);
+}
+
+.borderTitulo {
+  border-left: 2px solid var(--laranja);
+  margin-top: 24px;
+}
+
+.subTitulo {
+  width: 450px;
+  color: var(--cinza);
+  font-size: 20px;
+  font-family: var(--primary-font);
+  padding-left: 1rem;
+}
+
+.botaoExplorar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: var(--claro) 2px solid;
+  height: 60px;
+  width: 250px;
+  margin: 28px 0px 28px 0px;
+}
+
+.linkBotao {
+  text-decoration: none;
+}
+
+.textoBotao {
+  font-family: var(--primary-font);
+  font-size: 13px;
+  color: var(--claro);
+}
+
+.setaBotao {
+  padding-left: 50px;
+  vertical-align: middle;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  width: 700px;
+  background:
+    linear-gradient(90deg, #111111 0%, #111111 34%, rgba(5, 5, 5, 0.18) 75%),
+    linear-gradient(0deg, #050505 0%, transparent 5%);
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  width: 170px;
+  border-right: #d1cec7 1px solid;
+  justify-content: center;
+}
+
+.cardContent {
+  padding: 20px 18px;
+}
+
+.principalInfo {
+  font-size: 30px;
+  color: var(--laranja);
+  font-family: var(--primary-font);
+}
+
+.subInfo {
+  font-size: 10px;
+  font-family: var(--primary-font);
+  color: #bbbbbb;
+}
+
+.ultimoCard {
+  border: none;
+}
+
+.disclaimerIa {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 200px;
+  margin-right: 25px;
+}
+
+.disclaimerText {
+  color: #ffffff87; /*87 no final apra indicar o branco com 53% de opacidade que é 87 em hexadecimal*/
 }
