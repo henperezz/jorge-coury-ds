@@ -1,0 +1,217 @@
+:root {
+  --laranja: #ff5a1f;
+  --preto: #080808;
+  --claro: #f5f1e8;
+  --altura-menu: 96px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--preto);
+  color: var(--claro);
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* rolagem suave */
+  scroll-padding-top: var(
+    --altura-menu
+  ); /* define o espaçamento do topo da rolagem */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+/* barra de navegação fixa */
+header {
+  width: 100%;
+  height: var(--altura-menu);
+  padding: 0 clamp(24px, 5vw, 88px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  background: rgba(8, 8, 8, 0.25);
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.marca i {
+  width: 40px;
+  height: 3px;
+  background: var(--laranja);
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition:
+    transform 0.25s ease,
+    color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--laranja);
+  transform: translateY(-3px);
+}
+/* ========================================
+SEÇÃO INICIAL
+======================================== */
+
+.hero {
+  min-height: 920px;
+  padding-top: var(--altura-menu);
+  position: relative;
+  background:
+    linear-gradient(
+      90deg,
+      #050505 0%,
+      rgba(5, 5, 5, 0.86) 34%,
+      rgba(5, 5, 5, 0.18) 75%
+    ),
+    linear-gradient(0deg, #050505 0%, transparent 35%),
+    url("./imagens/hero-basquete-feminino.png") center / cover no-repeat;
+}
+
+/* CABEÇALHO FIXO */
+
+/* CHAMADA PRINCIPAL */
+
+.chamada {
+  max-width: 680px;
+  margin: clamp(95px, 14vh, 145px) 0 0 clamp(24px, 5vw, 88px);
+}
+
+.chamada > b,
+.secao b,
+.selecao b {
+  color: var(--laranja);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 24px 0;
+  font-size: clamp(64px, 7.5vw, 116px);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.86;
+  letter-spacing: -0.065em;
+}
+
+h1 em {
+  color: var(--laranja);
+  font-style: normal;
+}
+
+.chamada p {
+  max-width: 530px;
+  padding-left: 20px;
+  color: var(--claro);
+  border-left: 3px solid var(--laranja);
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.botao-principal {
+  border: 1px solid #ffffffaa;
+  width: 270px;
+  height: 60px;
+  margin-top: 32px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.botao-principal:hover {
+  transform: translateY(-4px);
+  border-color: var(--laranja);
+  box-shadow: 0 10px 24px rgba(255, 90, 31, 0.18);
+}
+
+.botao-principal span {
+  color: var(--laranja);
+  font-size: 25px;
+}
+
+/* NÙMEROS E CREDITOS */
+.numeros {
+  width: fit-content;
+  margin-top: 45px;
+  margin-left: clamp(24px, 5vw, 88px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #111c;
+  border: 1px solid #ffffff2d;
+  backdrop-filter: blur(15px);
+}
+
+.numeros article {
+  padding: 18px 24px;
+  border-right: 1px solid #ffffff29;
+}
+
+.numeros strong {
+  display: block;
+  color: var(--laranja);
+  font-size: 30px;
+}
+
+.numeros small {
+  display: block;
+  color: #bbbbbb;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* SEÇÕES GERAIS */
+
+.secao {
+  padding: 105px clamp(24px, 6vw, 96px);
+}
+
+.clara {
+  background-color: var(--claro);
+  color: #151515;
+}
