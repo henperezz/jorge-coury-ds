@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integração API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="buscar-cidade">
+      <h1>Integração de API's - Clima</h1>
+      <p>Digite o nome da cidade desejada</p>
+      <input
+        type="text"
+        id="cidade"
+        placeholder="Digite o nome da sua cidade"
+      />
+      <button type="submit" id="botao-buscar">Buscar</button>
+    </section>
+    <section class="card-info">
+      <div class="infos-principais">
+        <h1 id="nome-cidade"></h1>
+        <h2 id="temperatura-cidade">25°</h2>
+        <p id="sensacao-termica">20°</p>
+      </div>
+
+      <div class="infos-adicionais">
+        <p id="humidade"></p>
+        <p id="visibilidade">100%</p>
+        <p id="velocidade-vento">alguns</p>
+        <p id="status-ceu">Limpo</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
