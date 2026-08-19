@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempo Clima - Meteorologia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="titulo-site">
+        <h1 class="titulo-1">Tempo</h1>
+        <h2 class="titulo-2">Clima <span>🌥</span></h2>
+      </div>
+
+      <input
+        type="text"
+        id="pesquisa-cidade"
+        placeholder="Busque uma cidade... "
+      />
+      <button type="submit" id="botao-busca">Buscar</button>
+    </header>
+    <div class="cor-header-2"></div>
+
+    <section class="infos-clima">
+      <h1>Previsão do tempo para <span id="nome-cidade"></span></h1>
+      <div class="flex-infos">
+        <div class="infos">
+          <p>Temperatura</p>
+          <p>
+            <span id="min-temp">1</span>°C <span id="temp-atual">2</span>°C
+            <span id="max-temp">3 </span> °C
+          </p>
+        </div>
+        <div class="infos">
+          <p>Sensação Térmica</p>
+          <p>
+            <span id="min-feels-like"></span>C°
+            <span id="atual-feels-like"></span>C°
+            <span id="max-feels-like"></span>C°
+          </p>
+        </div>
+
+        <div class="infos">
+          <p>Vento</p>
+          <span id="ventos-info"></span>km/h
+        </div>
+
+        <div class="infos">
+          <p>Sol</p>
+          <p>
+            <span id="sunrise-info"></span>
+            <span id="sunset-info"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

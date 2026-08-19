@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor-header-1: rgb(0, 128, 199);
+  --cor-header-2: rgb(0, 73, 131);
+  --background-cor-1: #ffffff;
+  --background-cor-2: rgb(246, 246, 246);
+  --cor-texto-1: rgb(226, 37, 26);
+  --cor-texto-2: rgb(3, 130, 204);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-header-1);
+}
+
+.cor-header-2 {
+  height: 2rem;
+  width: 100%;
+  background-color: var(--cor-header-2);
+}
+
+.titulo-site {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.titulo-1,
+.titulo-2 {
+  font-family: Roboto;
+}
+
+.titulo-1 {
+  color: #ffffff;
+}
+
+.titulo-2 {
+  color: #cecece;
+}
+
+#pesquisa-cidade {
+  height: 30%;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  margin-right: 16px;
+}
+
+#pesquisa-cidade::placeholder {
+  padding-left: 20px;
+}
+
+#botao-busca {
+  height: 30%;
+  width: 3%;
+  background-color: var(--cor-header-2);
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+.infos-clima {
+  background-color: var(--background-cor-13);
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+.infos-clima h1 {
+  padding-left: 5rem;
+}
+
+.flex-infos {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5rem;
+}
+
+.infos {
+  background-color: var(--background-cor-2);
+  width: 10rem;
+  margin-right: 5%;
+}
