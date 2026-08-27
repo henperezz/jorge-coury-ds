@@ -1,0 +1,91 @@
+:root {
+  --color-1: #ea7618;
+  --color-2: #005e79;
+  --border-color: #b8b8b8;
+  --font-1: "Ultra";
+  --font-2: "Roboto Mono";
+  --font-size-1: 32px;
+  --font-size-2: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fffefb;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 10%;
+  border-bottom: var(--border-color) 2px solid;
+  border-radius: 10px;
+}
+
+.logo_nome {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+
+.nome {
+  margin-left: 2%;
+}
+
+.nome_1 {
+  font-family: var(--font-1);
+  font-size: var(--font-size-1);
+  color: var(--color-1);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.nome_2 {
+  margin-left: 50%;
+  font-family: var(--font-1);
+  font-size: var(--font-size-1);
+  color: var(--color-2);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.header_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 44px 120px 44px 950px;
+  list-style: none;
+  gap: 20px;
+}
+
+.links_header {
+  font-family: var(--font-2);
+  font-size: var(--font-size-2);
+  color: #005e79;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+.links_header:hover {
+  color: #ea7618;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+}
+
+.titulos {
+}
+
+.banner_amora {
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
