@@ -28,17 +28,14 @@
         <div class="infos">
           <p>Temperatura</p>
           <p>
-            <span id="min-temp"></span>°C <span id="temp-atual"></span>°C
-            <span id="max-temp"></span> °C
+            <span style="color: #1368aa" id="min-temp"></span>°C -
+            <span id="temp-atual"></span>°C -
+            <span style="color: #e82107" id="max-temp"></span> °C
           </p>
         </div>
         <div class="infos">
           <p>Sensação Térmica</p>
-          <p>
-            <span id="min-feels-like"></span>C°
-            <span id="atual-feels-like"></span>C°
-            <span id="max-feels-like"></span>C°
-          </p>
+          <p><span id="atual-feels-like"></span>°C</p>
         </div>
 
         <div class="infos">
@@ -49,13 +46,19 @@
         <div class="infos">
           <p>Sol</p>
           <p>
-            <span id="sunrise-info"></span>
+            <span id="sunrise-info"></span> -
             <span id="sunset-info"></span>
           </p>
         </div>
       </div>
+
+      <div class="chart">
+        <canvas id="chart-temp"></canvas>
+      </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+    <script src="chart.js"></script>
   </body>
 </html>

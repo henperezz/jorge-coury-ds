@@ -94,6 +94,14 @@
 
 .infos {
   background-color: var(--background-cor-2);
-  width: 10rem;
+  border-radius: 10px;
+  width: 15rem;
   margin-right: 5%;
+  margin-top: 1rem;
+}
+
+.chart {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  width: 50%;
 }
