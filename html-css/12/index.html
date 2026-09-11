@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PedalFácil - Locação de Bicicletas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo_title">
+        <div class="logo_div">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="logo"
+          >
+            <circle cx="5.5" cy="17.5" r="3.5" />
+            <circle cx="18.5" cy="17.5" r="3.5" />
+            <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5" />
+          </svg>
+        </div>
+        <div class="title_div">
+          <p class="title">Pedal <span class="span_title">Fácil</span></p>
+        </div>
+      </div>
+
+      <div class="links_div">
+        <ul class="list_links">
+          <li><a class="links" href="#">Bikes</a></li>
+          <li><a class="links" href="#">Como funciona</a></li>
+          <li>
+            <a class="links" href="#"
+              ><button class="header_button_alugar">Alugar</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="start_stuff">
+        <div class="text_side">
+          <h2>Locação de bicicletas</h2>
+          <h1>Pedale com <span>liberdade</span>,</h1>
+          <h1>sem complicação.</h1>
+          <p>
+            Alugue a bike ideal para sua aventura ou para o dia a dia. Frota
+            variada, preços acessíveis e processo 100% online.
+          </p>
+
+          <div class="button_link_text_side">
+            <a href="#catalog"><button>Ver bikes disponíveis</button></a>
+
+            <a class="link_how" href="#how_works">Como funciona?</a>
+          </div>
+
+          <div class="cards_text_side">
+            <div class="card">
+              <h1>50+</h1>
+              <p>BIKES</p>
+            </div>
+            <div class="card">
+              <h1>4.9 <span class="material-symbols-outlined">star</span></h1>
+              <p>AVALIAÇÃO</p>
+            </div>
+            <div class="card">
+              <h1>3k+</h1>
+              <p>CLIENTES</p>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="img_start"
+          src="https://images.unsplash.com/photo-1629056528325-f328b5f27ae7?w=700&h=600&fit=crop&auto=format"
+          alt="Ciclista pedalando em trilha"
+        />
+      </section>
+
+      <section class="how_works" id="how_works">
+        <h1>Como funciona</h1>
+        <div class="cards_how">
+          <div class="card_how">
+            <p class="number_card">01</p>
+            <h2>Escolha sua bike</h2>
+            <p class="description_card_how">
+              Navegue pelo catálogo e selecione o modelo ideal para você.
+            </p>
+          </div>
+          <div class="card_how">
+            <p class="number_card">02</p>
+            <h2>Preencha o cadastro</h2>
+            <p class="description_card_how">
+              Informe seus dados, período de uso e horário de retirada.
+            </p>
+          </div>
+          <div class="card_how">
+            <p class="number_card">03</p>
+            <h2>Retire e pedale!</h2>
+            <p class="description_card_how">
+              Venha buscar no nosso endereço e aproveite ao máximo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog">
+        <h2>Catálogo</h2>
+        <div class="title_catalog">
+          <h1>Bikes disponíveis</h1>
+          <p>
+            <span id="quantity_available">3</span> modelos disponíveis agora
+          </p>
+        </div>
+
+        <div class="cards_catalog">
+          <div class="card_catalog">
+            <div class="popular_badge"><p>Popular</p></div>
+            <img
+              class="img_bike"
+              src="https://images.unsplash.com/photo-1673121414328-52eff37bc6d0?w=600&h=400&fit=crop&auto=format"
+              alt=""
+            />
+            <p class="class_bike">MOUNTAIN BIKE</p>
+            <p class="name_bike">Trek X-Cal 29</p>
+            <p class="description_bike">
+              Suspensão dianteira de 100mm, freios hidráulicos e câmbio Shimano
+              Deore. Ideal para trilhas e terrenos irregulares.
+            </p>
+            <hr />
+            <p class="pre_value">a partir de</p>
+            <p class="value_bike">
+              R$ 45 <span class="slash_day_value">/dia</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
