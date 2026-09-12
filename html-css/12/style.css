@@ -30,6 +30,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+  z-index: 100000;
   align-items: center;
   border-bottom: 1px solid var(--slate-500);
   width: 100%;
@@ -295,17 +296,26 @@ header {
   font-size: 3rem;
 }
 
+.title_catalog p {
+  margin-right: 5%;
+  color: var(--slate-400);
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
 .cards_catalog {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 4rem;
+  margin-bottom: 10rem;
 }
 
 .card_catalog {
-  height: 30rem;
-  width: 25rem;
+  height: 35rem;
+  width: 18rem;
   object-fit: cover;
-  background-color: #ffffff;
-  border-radius: rem;
+  background-color: var(--slate-100);
+  border-radius: 1rem;
 }
 
 .popular_badge {
@@ -330,4 +340,192 @@ header {
   height: 50%;
   width: 100%;
   object-fit: cover;
+  border-radius: 1rem;
+}
+
+.class_bike {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--green-dark);
+  padding-left: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.name_bike {
+  font-family: var(--font-body);
+  color: var(--slate-900);
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+.description_bike {
+  color: var(--slate-500);
+  font-family: var(--font-body);
+  font-size: 14px;
+  max-width: 14rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.card_catalog hr {
+  color: var(--slate-500);
+  width: 95%;
+  align-self: center;
+  justify-self: center;
+}
+
+.pre_value {
+  padding-left: 10px;
+  margin-top: 10px;
+  color: var(--slate-500);
+  font-family: var(--font-body);
+  font-size: 12px;
+}
+
+.value_available {
+  display: flex;
+  flex-direction: row;
+}
+
+.value_bike {
+  padding-left: 14px;
+  margin-top: 6px;
+  color: var(--slate-900);
+  font-family: var(--font-body);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.slash_day_value {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--slate-500);
+}
+
+.value_available li {
+  font-family: var(--font-display);
+  font-size: 14px;
+  margin-left: 100%;
+  color: var(--green);
+}
+
+.button_alocate_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.alocate_button {
+  background-color: var(--green);
+  border: none;
+  border-radius: 1rem;
+  color: var(--white);
+  font-weight: 700;
+  height: 2rem;
+  width: 16rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.alocate_button:hover {
+  background-color: var(--green-dark);
+  box-shadow: 0px 4px 12px rgb(0, 0, 0, 10);
+}
+
+.off {
+  display: none;
+}
+
+.unavailable {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.unavailable.alocate_button {
+  background-color: var(--slate-500);
+}
+
+.unavailable.alocate_button:hover {
+  box-shadow: none;
+  background-color: var(--slate-500);
+}
+
+#availability_list_off {
+  color: var(--slate-500);
+}
+
+.card_ready {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 10rem;
+  background-color: var(--green-dark);
+  border-radius: 1rem;
+}
+
+.text_side_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  color: var(--white);
+  font-family: var(--font-display);
+}
+.text_side_card h1 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.text_side_card p {
+  color: var(--slate-200);
+}
+
+.alocate_bike_button_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  align-self: center;
+  justify-self: flex-end;
+  margin-left: auto;
+  width: 10rem;
+  height: 25%;
+  margin-right: 4rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  color: var(--green-dark);
+  font-weight: 800;
+  font-family: var(--font-body);
+  font-size: 14px;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.alocate_bike_button_card p {
+  padding: 5px 10px 5px 10px;
+}
+
+.alocate_bike_button_card:hover {
+  box-shadow: 0px 4px 12px rgb(0, 0, 0, 10);
+}
+
+.decoration_card {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--white);
+  opacity: 0.3;
+  position: absolute;
+  right: 120px;
+  align-self: center;
+  z-index: 0;
+  border-radius: 100rem;
 }

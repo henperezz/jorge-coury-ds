@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star"
     />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -146,12 +147,134 @@
             </p>
             <hr />
             <p class="pre_value">a partir de</p>
-            <p class="value_bike">
-              R$ 45 <span class="slash_day_value">/dia</span>
+            <div class="value_available">
+              <p class="value_bike">
+                R$ 45<span class="slash_day_value">/dia</span>
+              </p>
+              <ul>
+                <li>Disponível</li>
+              </ul>
+            </div>
+
+            <div class="button_alocate_div">
+              <button class="alocate_button" id="alocate_btn">
+                Alugue sua bike
+              </button>
+            </div>
+          </div>
+
+          <div class="card_catalog">
+            <div class="popular_badge off"><p>Popular</p></div>
+            <img
+              class="img_bike"
+              src="https://images.unsplash.com/photo-1591047139334-337807f2b3e5?w=600&h=400&fit=crop&auto=format"
+              alt=""
+            />
+            <p class="class_bike">BICICLETA URBANA</p>
+            <p class="name_bike">City Classic Urban</p>
+            <p class="description_bike">
+              Quadro leve de alumínio, guidão ergonômico e bagageiro traseiro
+              integrado. Perfeita para o dia a dia na cidade
             </p>
+            <hr />
+            <p class="pre_value">a partir de</p>
+            <div class="value_available">
+              <p class="value_bike">
+                R$ 28<span class="slash_day_value">/dia</span>
+              </p>
+              <ul>
+                <li>Disponível</li>
+              </ul>
+            </div>
+
+            <div class="button_alocate_div">
+              <button class="alocate_button" id="alocate_btn">
+                Alugue sua bike
+              </button>
+            </div>
+          </div>
+
+          <div class="card_catalog">
+            <div class="popular_badge"><p>Novo</p></div>
+            <img
+              class="img_bike"
+              src="https://images.unsplash.com/photo-1620802051782-725fa33db067?w=600&h=400&fit=crop&auto=format"
+              alt=""
+            />
+            <p class="class_bike">ELÉTRICA</p>
+            <p class="name_bike">KBO E-Bike Breeze</p>
+            <p class="description_bike">
+              Motor 500Wcom autonomia de até 80km por carga. Pedal assistido em
+              5 níveis, ideal para longas distâncias sem esforço.
+            </p>
+            <hr />
+            <p class="pre_value">a partir de</p>
+            <div class="value_available">
+              <p class="value_bike">
+                R$ 75<span class="slash_day_value">/dia</span>
+              </p>
+              <ul>
+                <li>Disponível</li>
+              </ul>
+            </div>
+
+            <div class="button_alocate_div">
+              <button class="alocate_button" id="alocate_btn">
+                Alugue sua bike
+              </button>
+            </div>
+          </div>
+
+          <div class="card_catalog unavailable">
+            <div class="popular_badge off"><p>Popular</p></div>
+            <img
+              class="img_bike"
+              src="https://images.unsplash.com/photo-1499115026740-47ec7a0d026e?w=600&h=400&fit=crop&auto=format"
+              alt=""
+            />
+            <p class="class_bike">SPEED / ESTRADA</p>
+            <p class="name_bike">Veloz Road 700c</p>
+            <p class="description_bike">
+              Quadro de carbono leve, pneus 700x23c e câmbio Shimano Tiagra 20v.
+              Pra quem busca velocidade e performance.
+            </p>
+            <hr />
+            <p class="pre_value">a partir de</p>
+            <div class="value_available">
+              <p class="value_bike">
+                R$ 45<span class="slash_day_value">/dia</span>
+              </p>
+              <ul>
+                <li id="availability_list_off">Indisponível</li>
+              </ul>
+            </div>
+
+            <div class="button_alocate_div">
+              <button class="alocate_button unavailable" id="alocate_btn">
+                Indisponível
+              </button>
+            </div>
           </div>
         </div>
       </section>
+
+      <div class="card_ready">
+        <div class="text_side_card">
+          <h1>Pronto para pedalar?</h1>
+          <p>
+            Faça a sua reserva agora e aproveitea liberdade sobre duas rodas.
+          </p>
+        </div>
+
+        <div class="decoration_card"></div>
+
+        <a class="alocate_bike_button_card" href="#">
+          <p>
+            Alugue sua bike
+            <span class="material-symbols-outlined"></span>
+          </p>
+        </a>
+      </div>
     </main>
   </body>
 </html>
