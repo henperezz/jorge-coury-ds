@@ -12,7 +12,7 @@ function buscarClima() {
 
   const chaveApi = "824143e6dc4c899164e3d851f20f4258";
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={824143e6dc4c899164e3d851f20f4258}&units=metric&lang=pt_br`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveApi}&units=metric&lang=pt_br`;
 
   fetch(url)
     .then(function (resposta) {

@@ -529,3 +529,157 @@ header {
   z-index: 0;
   border-radius: 100rem;
 }
+
+/* PÁGINA DE DADOS */
+
+.back_title {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+  margin-left: 38%;
+}
+
+.back_title a {
+  padding: 20px 0px 20px 0px;
+  margin-right: 50%;
+  text-wrap: nowrap;
+  color: var(--slate-500);
+  text-decoration: none;
+  font-family: var(--font-display);
+  transition: 0.5s;
+}
+
+.back_title a:hover {
+  transform: translateY(-5px);
+}
+
+.back_title h1 {
+  color: var(--green);
+  font-size: 22px;
+  font-family: var(--font-display);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  background-color: #dcfce7;
+  margin-top: 20px;
+}
+
+.init_text {
+  color: var(--green);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.title_form {
+  color: var(--slate-900);
+  font-size: 2.5rem;
+  font-family: var(--font-display);
+  margin-bottom: 2rem;
+}
+
+.card_bike {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 97%;
+  height: fit-content;
+  border-radius: 1rem;
+  background-color: var(--slate-500);
+  box-shadow: 1px 0px 1px 1px #dbdada;
+}
+
+#img_bike_picked {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin-right: 2rem;
+  border-radius: 2rem;
+}
+
+.infos_bike {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.class_bike_data {
+  color: var(--green);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.name_bike_data {
+  color: #000000;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.value_bike {
+  color: var(--green);
+  font-family: var(--font-body);
+  font-size: 16px;
+}
+
+.info_value_bike {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  align-self: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.info_value_bike p {
+  color: var(--slate-400);
+  font-family: var(--font-body);
+  font-size: 14px;
+  justify-content: flex-end;
+  margin-left: auto;
+  font-weight: 800;
+}
+
+.info_value_bike h1 {
+  color: #000000;
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.personal_data {
+  margin-top: 5rem;
+}
+
+#name {
+  width: 40rem;
+  height: 30px;
+}
+
+#name::placeholder {
+  padding: 1rem;
+  font-size: 16px;
+  font-family: var(--font-display);
+}
+
+#phone_number {
+  width: 30rem;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+}
+
+#phone_number::placeholder {
+  padding: 1rem;
+  font-size: 16px;
+  font-family: var(--font-display);
+}

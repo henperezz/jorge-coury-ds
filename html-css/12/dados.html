@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PedalFácil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <p class="init_text">FORMULÁRIO DE RESERVA</p>
+        <h1 class="title_form">Finalize seu aluguel</h1>
+
+        <div class="card_bike">
+          <img
+            id="img_bike_picked"
+            src="https://images.unsplash.com/photo-1673121414328-52eff37bc6d0?w=600&h=400&fit=crop&auto=format"
+            alt="#"
+          />
+          <div class="infos_bike">
+            <p class="class_bike_data">MOUNTAIN BIKE</p>
+            <p class="name_bike_data">Trek X-Cal 29</p>
+            <p class="value_bike">R$ <span id="value">45,00</span> / dia</p>
+          </div>
+
+          <div class="info_value_bike">
+            <p><span id="days">2</span> itens</p>
+            <h1>R$ <span id="final_value_1">90,00</span></h1>
+          </div>
+        </div>
+
+        <div class="personal_data">
+          <p>DADOS PESSOAIS</p>
+          <div class="complete_inputs">
+            <p>Nome completo *</p>
+            <input type="text" id="name" placeholder="Ex: Maria Antonieta" />
+            <p>Telefone *</p>
+            <input
+              type="tel"
+              name=""
+              id="phone_number"
+              placeholder="(99) 99999-0000"
+            />
+          </div>
+          <p>ENDEREÇO COMPLETO</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
