@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header_data"></header>
     <main>
       <section class="form">
         <p class="init_text">FORMULÁRIO DE RESERVA</p>
@@ -42,20 +43,106 @@
         </div>
 
         <div class="personal_data">
-          <p>DADOS PESSOAIS</p>
+          <p class="title_data">DADOS PESSOAIS</p>
           <div class="complete_inputs">
-            <p>Nome completo *</p>
+            <p class="input_name">Nome completo *</p>
             <input type="text" id="name" placeholder="Ex: Maria Antonieta" />
-            <p>Telefone *</p>
+            <p class="input_name">Telefone *</p>
             <input
               type="tel"
               name=""
               id="phone_number"
               placeholder="(99) 99999-0000"
             />
+            <p class="title_data">ENDEREÇO COMPLETO</p>
+            <div class="cep_log">
+              <div class="cep_input">
+                <p class="input_name">CEP *</p>
+                <input type="text" name="" id="cep" placeholder="00000-000" />
+              </div>
+
+              <div>
+                <div class="log_input">
+                  <p class="input_name">Logradouro *</p>
+                  <input
+                    type="text"
+                    name=""
+                    id="logradouro"
+                    placeholder="Rua, Avenida, etc"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="address_row">
+              <div class="number_addres">
+                <p class="input_name">Número *</p>
+                <input
+                  type="text"
+                  name=""
+                  id="address_number"
+                  placeholder="123"
+                />
+              </div>
+
+              <div class="neighborhood_address">
+                <p class="input_name">Bairro*</p>
+                <input
+                  type="text"
+                  name=""
+                  id="neighborhood"
+                  placeholder="Nome do bairro"
+                />
+              </div>
+
+              <div class="city_address">
+                <p class="input_name">Cidade *</p>
+                <input type="text" name="" id="city" placeholder="São Paulo" />
+              </div>
+
+              <div class="state_address">
+                <p class="input_name">UF *</p>
+                <input type="text" name="" id="state" placeholder="SP" />
+              </div>
+            </div>
+
+            <p class="title_data">PERÍODO DE EMPRÉSTIMO</p>
+
+            <div class="loan_infos">
+              <div class="loan_init">
+                <p class="input_name">Data de retirada *</p>
+                <input type="date" name="" id="loan_start" />
+              </div>
+
+              <div class="loan_time_init">
+                <p class="input_name">Horário de retirada *</p>
+                <input type="time" name="" id="loan_time_start" />
+              </div>
+
+              <div class="loan_finish">
+                <p class="input_name">Data de devolução *</p>
+                <input type="date" name="" id="loan_day_finish" />
+              </div>
+            </div>
           </div>
-          <p>ENDEREÇO COMPLETO</p>
         </div>
+
+        <div class="final_value_card">
+          <div class="infos_value">
+            <p class="days_value">
+              <span id="days_final">2</span> dias x R$
+              <span id="value">45,00</span>
+            </p>
+            <p class="pay_retire">Pagamento na retirada</p>
+          </div>
+
+          <h1 class="final_price_pay">
+            R$ <span id="final_price">90,00</span>
+          </h1>
+        </div>
+
+        <button type="submit" class="submit_forms" id="submit_infos">
+          Confirmar reserva
+        </button>
       </section>
     </main>
   </body>

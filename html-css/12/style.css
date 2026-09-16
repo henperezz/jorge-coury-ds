@@ -25,7 +25,7 @@ body {
   background-color: var(--bg);
 }
 
-header {
+.header_index {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -532,6 +532,10 @@ header {
 
 /* PÁGINA DE DADOS */
 
+input {
+  padding-left: 10px;
+}
+
 .back_title {
   display: flex;
   flex-direction: row;
@@ -568,12 +572,14 @@ header {
   justify-content: center;
   align-items: flex-start;
   width: 50%;
-  background-color: #dcfce7;
-  margin-top: 20px;
+  background-color: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .init_text {
   color: var(--green);
+  font-weight: 800;
   font-family: var(--font-body);
   font-size: 1rem;
   margin-bottom: 10px;
@@ -589,12 +595,12 @@ header {
 .card_bike {
   display: flex;
   flex-direction: row;
-  align-self: center;
-  width: 97%;
+  align-self: flex-start;
+  width: 85%;
   height: fit-content;
   border-radius: 1rem;
-  background-color: var(--slate-500);
-  box-shadow: 1px 0px 1px 1px #dbdada;
+  background-color: var(--white);
+  box-shadow: 1px 1px 2px 1px #dbdada;
 }
 
 #img_bike_picked {
@@ -660,15 +666,24 @@ header {
   margin-top: 5rem;
 }
 
+.title_data {
+  color: var(--slate-500);
+  opacity: 0.7;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: var(--font-display);
+}
+
 #name {
-  width: 40rem;
+  width: 50rem;
   height: 30px;
 }
 
-#name::placeholder {
-  padding: 1rem;
-  font-size: 16px;
+.input_name {
+  color: var(--slate-900);
   font-family: var(--font-display);
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 #phone_number {
@@ -676,10 +691,155 @@ header {
   height: 30px;
   border-radius: 5px;
   border: 1px solid var(--slate-400);
+  margin-bottom: 1rem;
 }
 
-#phone_number::placeholder {
-  padding: 1rem;
-  font-size: 16px;
+#phone_number::placeholder,
+#cep::placeholder,
+#name::placeholder,
+#logradouro::placeholder,
+#address_number::placeholder,
+#neighborhood::placeholder {
+  font-size: 14px;
   font-family: var(--font-display);
+}
+
+.cep_log {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#cep {
+  height: 30px;
+  width: 15rem;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+}
+
+#logradouro {
+  height: 30px;
+  width: 32rem;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+}
+
+.address_row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#address_number {
+  height: 30px;
+  width: 10rem;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+}
+
+#neighborhood {
+  height: 30px;
+  width: 13rem;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+}
+
+#city {
+  height: 30px;
+  width: 13rem;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+}
+
+#state {
+  height: 30px;
+  width: 8.2rem;
+  border-radius: 5px;
+  border: 1px solid var(--slate-400);
+  margin-bottom: 1rem;
+}
+
+.loan_infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+}
+
+#loan_start {
+  height: 30px;
+  width: 15rem;
+  border: 1px solid var(--slate-400);
+  margin-bottom: 1rem;
+}
+
+#loan_time_start {
+  height: 30px;
+  width: 15rem;
+  border: 1px solid var(--slate-400);
+  margin-bottom: 1rem;
+}
+
+#loan_day_finish {
+  height: 30px;
+  width: 15.2rem;
+  border: 1px solid var(--slate-400);
+  margin-bottom: 1rem;
+}
+
+.final_value_card {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: 85%;
+  height: fit-content;
+  border-radius: 1rem;
+  background-color: var(--green-light);
+  border: 1px solid var(--green);
+  box-shadow: 1px 0px 1px 1px #dbdada;
+}
+
+.infos_value {
+  padding: 20px;
+}
+
+.days_value {
+  font-size: 1.2rem;
+  font-family: var(--font-display);
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.pay_retire {
+  font-size: 1rem;
+  font-family: var(--font-display);
+  color: var(--green-dark);
+}
+
+.final_price_pay {
+  justify-self: flex-end;
+  align-self: center;
+  margin-left: auto;
+  padding-right: 20px;
+  color: var(--green-dark);
+  font-weight: 800;
+  font-family: var(--font-display);
+}
+
+.submit_forms {
+  margin-top: 1rem;
+  height: 50px;
+  width: 85%;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--green-dark);
+  color: var(--white);
+  font-size: 1.3rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.submit_forms:hover {
+  box-shadow: 0px 4px 12px rgb(0, 0, 0, 10);
 }
