@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversor de Velocidade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="cartao">
+
+    <div class="cartao-icone">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M8 40 A20 20 0 0 1 48 40" stroke="#0D8C7E" stroke-width="3" stroke-linecap="round"/>
+        <line x1="28" y1="40" x2="39" y2="25" stroke="#0D8C7E" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="28" cy="40" r="3.5" fill="#0D8C7E"/>
+        <circle cx="8" cy="40" r="2" fill="#0D8C7E"/>
+        <circle cx="48" cy="40" r="2" fill="#0D8C7E"/>
+        <circle cx="28" cy="12" r="2" fill="#0D8C7E"/>
+      </svg>
+    </div>
+
+    <h1 class="cartao-titulo">Conversor de velocidade</h1>
+
+    <div class="grupo-alternar" role="group" aria-label="Escolha a direção da conversão">
+      <button class="botao-alternar ativo" id="botaoKmhParaMs" type="button">km/h → m/s</button>
+      <button class="botao-alternar" id="botaoMsParaKmh" type="button">m/s → km/h</button>
+    </div>
+
+    <div class="grupo-campo">
+      <label class="rotulo-campo" id="rotuloEntrada" for="campoValor">Valor em km/h</label>
+      <div class="caixa-campo">
+        <input class="campo-valor" type="number" id="campoValor" placeholder="0" inputmode="decimal" autocomplete="off" autofocus>
+        <span class="unidade" id="unidadeEntrada">km/h</span>
+      </div>
+    </div>
+
+    <div class="grupo-campo">
+      <span class="rotulo-campo">Resultado</span>
+      <div class="caixa-campo caixa-resultado">
+        <span class="resultado-valor" id="resultado">0</span>
+        <span class="unidade" id="unidadeResultado">m/s</span>
+      </div>
+    </div>
+
+    <button class="botao-principal" id="botaoConverter" type="button">Converter</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
